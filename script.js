@@ -18,7 +18,6 @@
           break;
       
         default:
-          // execute default code block
       }
     
     
@@ -93,7 +92,7 @@ let computerWin = "Computer wins the game! Congratulations!"
    game ();
 
 
-//Keeps score and prints out correct messages based on score
+//Keeps score prints out correct messages based on score
 
 let result = playSingleRound ();
 
@@ -116,12 +115,13 @@ function gameScore (result) {
 
 }
 
+
 gameScore (result);
 
+// Prints out correct messages based on score
 function showWinner () {
 
   if (playerScore > computerScore) {
-
     return playerWin;
   
   }else if (computerScore > playerScore) {
