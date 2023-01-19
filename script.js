@@ -1,11 +1,11 @@
-
+ 
 
 //do game through listeners
 const button = document.querySelectorAll ('.button');
 
 button.forEach((button) => {
   button.addEventListener('click', function () {
-  const pInput = this.textContent;
+  const pInput = this.value;
   const cOptions = ['rock', 'paper', 'scissors'];
   const cInput = cOptions[Math.floor(Math.random() * 3)];
 
